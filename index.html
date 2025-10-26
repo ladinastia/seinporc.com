@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NombreEmpresa</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+
+
+
+</head>
+<body>
+
+<!-- ===== HEADER con mega menús y submenús ===== -->
+<header class="site-header" role="banner">
+  <div class="container header__wrap">
+    <!-- LOGO / MARCA -->
+    <a href="#inicio" class="brand" aria-label="Ir al inicio">
+      <img src="assets/img/logo.png" alt="SEINPORC" class="logo-img">
+      <span class="brand__name">SEINPORC</span>
+    </a>
+
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <nav id="site-nav" class="site-nav" role="navigation" aria-label="Principal">
+      <ul class="menu" role="menubar">
+
+        <!-- PRODUCT: Mega menú -->
+        <li class="menu__item menu__item--has-mega" role="none">
+          <button class="menu__link" role="menuitem" aria-expanded="false" aria-controls="mega-product">Inicio</button>
+          <!-- ATENCIÓN: NO usar "hidden" aquí; el CSS controla visibilidad con opacity/visibility -->
+          <div id="mega-product" class="mega" role="group" aria-label="Product" aria-hidden="true">
+            <div class="mega__inner">
+              <div class="mega__col mega__col--main">
+                <ul class="mega-list" aria-label="Destacados">
+                  <li class="mega-item"><a href="#" class="mega-item__link"><span class="mega-item__icon">🧩</span><span class="mega-item__content"><span class="mega-item__title">Interaction design</span><span class="mega-item__desc">Interaction design tools</span></span></a></li>
+                  <li class="mega-item"><a href="#" class="mega-item__link"><span class="mega-item__icon">🎨</span><span class="mega-item__content"><span class="mega-item__title">UI design</span><span class="mega-item__desc">Free UI design software</span></span></a></li>
+                  <li class="mega-item"><a href="#" class="mega-item__link"><span class="mega-item__icon">📄</span><span class="mega-item__content"><span class="mega-item__title">Forms and data</span><span class="mega-item__desc">Simulate forms and data</span></span></a></li>
+                  <li class="mega-item"><a href="#" class="mega-item__link"><span class="mega-item__icon">🗺️</span><span class="mega-item__content"><span class="mega-item__title">User flows</span><span class="mega-item__desc">Diagram user flows</span></span></a></li>
+                  <li class="mega-item"><a href="#" class="mega-item__link"><span class="mega-item__icon">🤝</span><span class="mega-item__content"><span class="mega-item__title">Collaboration</span><span class="mega-item__desc">Design better together</span></span></a></li>
+                </ul>
+                <div class="mega-spot"><a href="#" class="mega-spot__link"><strong>Release 1.0</strong><span class="mega-spot__desc">Biblioteca de UI, últimos dispositivos y más</span></a></div>
+              </div>
+              <aside class="mega__col mega__col--side" aria-label="Más opciones">
+                <ul class="mega-links">
+                  <li><a href="#">Integrations</a></li>
+                  <li><a href="#">Design Systems</a></li>
+                  <li><a href="#">All features</a></li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </li>
+
+        <!-- USE CASES: Mega menú -->
+        <li class="menu__item menu__item--has-mega" role="none">
+          <button class="menu__link" role="menuitem" aria-expanded="false" aria-controls="mega-usecases">Ponentes</button>
+          <div id="mega-usecases" class="mega" role="group" aria-label="Use cases" aria-hidden="true">
+            <div class="mega__inner">
+              <div class="mega__col mega__col--main">
+                <ul class="mega-list" aria-label="Casos de uso">
+                  <li class="mega-item"><a href="#" class="mega-item__link"><span class="mega-item__icon">📈</span><span class="mega-item__content"><span class="mega-item__title">Marketing</span><span class="mega-item__desc">Wireframes de campañas y landing pages</span></span></a></li>
+                  <li class="mega-item"><a href="#" class="mega-item__link"><span class="mega-item__icon">🧪</span><span class="mega-item__content"><span class="mega-item__title">Product discovery</span><span class="mega-item__desc">Mapas de empatía y journeys</span></span></a></li>
+                  <li class="mega-item"><a href="#" class="mega-item__link"><span class="mega-item__icon">⚙️</span><span class="mega-item__content"><span class="mega-item__title">Engineering</span><span class="mega-item__desc">Diagramas de flujo y ERD</span></span></a></li>
+                  <li class="mega-item"><a href="#" class="mega-item__link"><span class="mega-item__icon">🧭</span><span class="mega-item__content"><span class="mega-item__title">UX research</span><span class="mega-item__desc">Screener, guías y síntesis</span></span></a></li>
+                </ul>
+                <div class="mega-spot"><a href="#" class="mega-spot__link"><strong>Ver ejemplos reales</strong><span class="mega-spot__desc">Plantillas listas para editar</span></a></div>
+              </div>
+              <aside class="mega__col mega__col--side" aria-label="Más opciones">
+                <ul class="mega-links">
+                  <li><a href="#">Ecommerce</a></li>
+                  <li><a href="#">SaaS B2B</a></li>
+                  <li><a href="#">Educación</a></li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </li>
+
+        <!-- TEMPLATES: Mega menú -->
+        <li class="menu__item menu__item--has-mega" role="none">
+          <button class="menu__link" role="menuitem" aria-expanded="false" aria-controls="mega-templates">Registro</button>
+          <div id="mega-templates" class="mega" role="group" aria-label="Templates" aria-hidden="true">
+            <div class="mega__inner">
+              <div class="mega__col mega__col--main">
+                <ul class="mega-list" aria-label="Plantillas">
+                  <li class="mega-item"><a href="#" class="mega-item__link"><span class="mega-item__icon">📐</span><span class="mega-item__content"><span class="mega-item__title">UI kit</span><span class="mega-item__desc">Componentes y estilos predefinidos</span></span></a></li>
+                  <li class="mega-item"><a href="#" class="mega-item__link"><span class="mega-item__icon">🧭</span><span class="mega-item__content"><span class="mega-item__title">User flow</span><span class="mega-item__desc">Flujos base para apps</span></span></a></li>
+                  <li class="mega-item"><a href="#" class="mega-item__link"><span class="mega-item__icon">🧱</span><span class="mega-item__content"><span class="mega-item__title">Design system</span><span class="mega-item__desc">Tokens, grids y tipografías</span></span></a></li>
+                  <li class="mega-item"><a href="#" class="mega-item__link"><span class="mega-item__icon">📝</span><span class="mega-item__content"><span class="mega-item__title">Brief</span><span class="mega-item__desc">Plantilla para requerimientos</span></span></a></li>
+                </ul>
+                <div class="mega-spot"><a href="#" class="mega-spot__link"><strong>Nuevas plantillas</strong><span class="mega-spot__desc">Se actualizan cada mes</span></a></div>
+              </div>
+              <aside class="mega__col mega__col--side" aria-label="Descargas">
+                <ul class="mega-links">
+                  <li><a href="#">Ver todas</a></li>
+                  <li><a href="#">Favoritas</a></li>
+                  <li><a href="#">Recomendadas</a></li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </li>
+
+        <!-- FREE RESOURCES: Submenú simple -->
+        <li class="menu__item menu__item--has-sub" role="none">
+          <button class="menu__link" role="menuitem" aria-expanded="false" aria-controls="sub-free">Contactanos</button>
+          <ul id="sub-free" class="submenu" role="group" aria-hidden="true">
+            <li><a href="#">UI kits</a></li>
+            <li><a href="#">Icon sets</a></li>
+            <li><a href="#">Guides</a></li>
+          </ul>
+        </li>
+
+        <!-- PRICING: enlace directo -->
+        <li class="menu__item" role="none"><a class="menu__link" role="menuitem" href="#">Ubicanos</a></li>
+      </ul>
+    </nav>
+
+    <!-- CTA derecha -->
+  
+  </div>
+</header>
+
+
+
+
+
+
+
+<!-- ===== HERO SEINPORC — Collage creativo + cuenta regresiva ===== -->
+<section id="inicio" class="sp-hero" aria-label="Portada SEINPORC">
+  <!-- Fondo: collage rotatorio -->
+  <div class="sp-hero__backdrop" role="region" aria-roledescription="carrusel" aria-label="Collage de imágenes" data-interval="3600">
+    <figure class="sp-slide is-active" aria-label="Imagen 1">
+      <img class="sp-slide__img sp-slide__img--main" src="assets/img/auditorio1.jpg" alt="Vista aérea del recinto del congreso" loading="eager">
+      <img class="sp-slide__img sp-slide__img--chip" src="assets/img/auditorio1.jpg" alt="Participantes en capacitación técnica" loading="lazy">
+    </figure>
+    <figure class="sp-slide" hidden aria-label="Imagen 2">
+      <img class="sp-slide__img sp-slide__img--main" src="assets/img/auditorio2.jpg" alt="Zona de exposición y networking" loading="lazy">
+      <img class="sp-slide__img sp-slide__img--chip" src="assets/img/auditorio2.jpg" alt="Demostración de tecnología para granjas" loading="lazy">
+    </figure>
+    <figure class="sp-slide" hidden aria-label="Imagen 3">
+      <img class="sp-slide__img sp-slide__img--main" src="assets/img/auditorio3.jpg" alt="Auditorio principal con ponentes" loading="lazy">
+      <img class="sp-slide__img sp-slide__img--chip" src="assets/img/auditorio3.jpg" alt="Sesión práctica con especialistas" loading="lazy">
+    </figure>
+  </div>
+
+  <!-- Overlay -->
+  <div class="sp-hero__overlay" aria-hidden="true"></div>
+
+  <!-- Contenido -->
+  <div class="sp-hero__content container">
+    <!-- Badges -->
+    <div class="sp-badges" aria-label="Etiquetas del evento">
+      <span class="sp-badge">SEINPORC 2025</span>
+      <span class="sp-badge sp-badge--alt">Capacitación • Innovación • Bioseguridad</span>
+    </div>
+
+    <!-- Título -->
+    <h1 class="sp-title">Excelencia porcina que transforma</h1>
+    <p class="sp-subtitle">Un encuentro profesional para compartir conocimiento, tendencias y tecnología del sector.</p>
+
+    <!-- Panel: Contador + Info -->
+    <div class="sp-panel">
+      <!-- Contador (hora Lima UTC-5) -->
+      <div id="countdown" class="sp-countdown"
+           data-target="2025-11-20T13:00:00-05:00"
+           aria-label="Cuenta regresiva al inicio del evento (hora de Perú)">
+        <div class="sp-cd__box"><span class="sp-cd__num" id="cd-days">00</span><span class="sp-cd__label">DÍAS</span></div>
+        <div class="sp-cd__box"><span class="sp-cd__num" id="cd-hours">00</span><span class="sp-cd__label">HORAS</span></div>
+        <div class="sp-cd__box"><span class="sp-cd__num" id="cd-mins">00</span><span class="sp-cd__label">MIN</span></div>
+        <div class="sp-cd__box"><span class="sp-cd__num" id="cd-secs">00</span><span class="sp-cd__label">SEG</span></div>
+      </div>
+
+      <!-- Barra de datos (bonita, con íconos) -->
+      <ul class="sp-infobar" aria-label="Datos del evento">
+        <li class="sp-info">
+          <span class="sp-info__icon" aria-hidden="true">
+            <!-- calendar -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" focusable="false">
+              <rect x="3" y="4" width="18" height="17" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M8 2v4M16 2v4M3 9h18" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          </span>
+          <span class="sp-info__label">Fecha</span>
+          <span class="sp-info__value">Jueves 20 de noviembre — 1:00 p. m.</span>
+        </li>
+        <li class="sp-info">
+          <span class="sp-info__icon" aria-hidden="true">
+            <!-- clock / timezone -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" focusable="false">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="sp-info__label">Zona horaria</span>
+          <span class="sp-info__value">Lima, Perú (UTC-5)</span>
+        </li>
+        <li class="sp-info">
+          <span class="sp-info__icon" aria-hidden="true">
+            <!-- location -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" focusable="false">
+              <path d="M12 22s7-5.5 7-12a7 7 0 1 0-14 0c0 6.5 7 12 7 12Z" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="10" r="2.8" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </span>
+          <span class="sp-info__label">Lugar</span>
+          <span class="sp-info__value">Auditorio de la Facultad de Medicina Veterinaria y Zootecnia — Sede Chincha</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Acciones -->
+    <div class="sp-actions">
+      <a href="#registro" class="btn btn--primary">Inscribirme</a>
+      <a href="#programa" class="btn btn--ghost">Ver programa</a>
+    </div>
+  </div>
+
+  <!-- Indicadores del carrusel (opcionales) -->
+  <div class="sp-hero__dots" role="tablist" aria-label="Indicadores">
+    <button class="sp-dot is-active" role="tab" aria-selected="true">1</button>
+    <button class="sp-dot" role="tab" aria-selected="false">2</button>
+    <button class="sp-dot" role="tab" aria-selected="false">3</button>
+  </div>
+
+  <!-- Separador inclinado decorativo -->
+  <div class="sp-hero__skew" aria-hidden="true"></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- =========================================================
+ SECCIÓN: ACERCA DEL EVENTO — Versión informativa
+========================================================= -->
+<section id="acerca-evento" class="about-event" aria-labelledby="about-title">
+  <div class="about-event__wrap container">
+
+    <!-- Columna izquierda: Texto -->
+    <div class="about-event__content">
+      <p class="about-event__eyebrow">
+        <span class="tag">SEINPORC 2025</span>
+        <span class="tag tag--alt">Seminario Internacional Porcino</span>
+      </p>
+
+      <h2 id="about-title" class="about-event__title">
+        Acerca del evento
+      </h2>
+
+      <p class="about-event__intro">
+        SEINPORC EXPO - 2025, es el punto de encuentro nacional e internacional que reúne a profesionales, productores, especialistas, estudiantes y empresas comprometidas con el desarrollo competitivo y sostenible de la porcicultura peruana.
+      </p>
+
+      <p class="about-event__desc">
+        Este evento integra formación, experiencia práctica y exhibición tecnológica, generando un espacio de actualización profesional, intercambio comercial y valorización del cerdo peruano como motor económico y símbolo cultural.
+      </p>
+
+      <p class="about-event__desc">
+        A lo largo del encuentro, los participantes podrán fortalecer sus conocimientos, hacer contactos estratégicos y descubrir nuevas oportunidades para potenciar la producción moderna con identidad nacional.
+      </p>
+      <p class="about-event__desc">
+        Ejes destacados del evento:
+      </p>
+
+
+      <ul class="about-event__highlights" role="list">
+        <li><span aria-hidden="true">•</span> Conferencias con expertos en producción, sostenibilidad y rentabilidad porcina.</li>
+        <li><span aria-hidden="true">•</span> Expo de empresas, insumos, equipamiento y soluciones tecnológicas.</li>
+        <li><span aria-hidden="true">•</span> Talleres prácticos de embutidos y transformación cárnica.</li>
+        <li><span aria-hidden="true">•</span> Conexión entre productores, estudiantes, académicos y profesionales del rubro.</li>
+        <li><span aria-hidden="true">•</span> Promoción del cerdo peruano como símbolo cultural y gastronómico del país.</li>
+      </ul>
+    </div>
+
+    <!-- Columna derecha: Imagen -->
+    <figure class="about-event__media">
+      <img src="assets/img/banner1.jpg"
+           alt="Participantes en conferencia especializada sobre porcicultura"
+           class="about-event__img"
+           loading="lazy">
+      <figcaption class="about-event__caption">
+        Formación técnica y visión compartida para el futuro del sector porcino.
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/hero-countdown.js"></script>
+  <script src="js/about-event.js" defer></script>
+
+
+
+
+</body>
+</html>
